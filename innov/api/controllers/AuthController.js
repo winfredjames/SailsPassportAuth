@@ -2,11 +2,6 @@ var passport = require('passport');
 
 module.exports = {
 
-    _config: {
-        actions: false,
-        shortcuts: false,
-        rest: false
-    },
     facebook: function(req, res) {
     passport.authenticate('facebook', { failureRedirect: '/login', scope: ['email'] }, function(err, user) {
       req.logIn(user, function(err) {

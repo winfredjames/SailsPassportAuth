@@ -2,10 +2,7 @@ module.exports.routes = {
   '/': {
     controller: 'home'
   },
- '/login' : {
-    controller : 'auth',
-    action     : 'index'
-  },
+ 
 
   'get /login': {
        view: 'login'
