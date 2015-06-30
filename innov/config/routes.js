@@ -1,6 +1,10 @@
 module.exports.routes = {
   '/': {
-    view: 'homepage'
+    controller: 'home'
+  },
+ '/login' : {
+    controller : 'auth',
+    action     : 'index'
   },
 
   'get /login': {
